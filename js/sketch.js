@@ -1,7 +1,7 @@
 
-//                0    1    2    3    4 
-let circlesizes =[50 , 75 , 80 , 45 , 82]
-let circleindex =0
+//               
+let words=['plymouth', 'is', 'awesome']
+let wordsindex =0
 
 
 
@@ -14,7 +14,7 @@ function draw() {
     background(220);
 
     fill(255, 255, 255);
-    ellipse(width/2, width/2 , circlesizes[circleindex]);
+   text ( words[wordsindex], mouseX, mouseY)
     
 
 
@@ -23,10 +23,10 @@ function draw() {
 function mousePressed(){
    
    
-circleindex++
+wordsindex++
 
-if(circleindex == circlesizes.length){
-circleindex =0;
+if(wordsindex == words.length){
+wordsindex =0;
 }
 
 }
